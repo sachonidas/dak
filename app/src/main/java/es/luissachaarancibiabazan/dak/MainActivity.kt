@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     fun getVolleyWheather(){
         val queue = Volley.newRequestQueue(this)
         val location = 305619
-        val apiKey = "BPqA6OBTh1C6ORoyQyr67ppa0BQWuRat"
+        val apiKey = "API-KEY"
         val url ="http://dataservice.accuweather.com/forecasts/v1/daily/1day/$location?apikey=$apiKey&language=es-es"
         val request = JsonObjectRequest(Request.Method.GET, url, null,
             { response ->
